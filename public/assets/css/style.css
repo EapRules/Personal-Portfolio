@@ -1,0 +1,554 @@
+/* =====================
+  General Styles
+===================== */
+html {
+  font-size: 110%;
+}
+html,
+body {
+  height: 100%; /* Fullscreen BG */
+  width: 100%;
+}
+body {
+  color: #e0e0e0;
+  font-family: "Work Sans", helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h1 {
+  font-family: "Unica One", cursive;
+  font-size: 3rem;
+}
+h2 {
+  font-family: "Unica One", cursive;
+  font-size: 2.3rem;
+}
+h3 {
+  font-family: "Unica One", cursive;
+  font-size: 1.8rem;
+}
+h4 {
+  color: #a82626;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+small {
+  line-height: 1;
+}
+a {
+  color: #a82626;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+a:focus,
+a:hover {
+  background-color: #00000025;
+  color: #a82626;
+}
+hr {
+  border-color: #a82626;
+  margin: 30px 0 60px;
+}
+
+/* =====================
+  Navbar Styles
+===================== */
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  height: 80px;
+  left: 0;
+  margin-bottom: 0;
+  padding: 0 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-header {
+  height: 80px;
+}
+.navbar-nav {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.navbar-brand,
+.navbar-nav > li > a {
+  font-family: "Unica One", cursive;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+  opacity: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: opacity 0.5s ease-in-out;
+}
+.navbar-brand .logo {
+  margin-right: 15px;
+  margin-top: -12px;
+  max-height: 90px;
+}
+.navbar-brand span {
+  color: #a82626;
+}
+.navbar-nav > li > a,
+.navbar-nav > li > button {
+  color: #a82626;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 22px;
+}
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  color: #a82626;
+  text-decoration: underline;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #a82626;
+  text-decoration: underline;
+}
+/* Fixed Menu */
+.menu-fixed {
+  /* background-color: #000000; */
+  background-color: rgba(0, 0, 0, 0.829);
+  border-radius: 0;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.849);
+  height: 60px;
+  padding-top: 0;
+  position: fixed;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.menu-fixed .navbar-header {
+  height: 60px;
+}
+.menu-fixed .navbar-toggle,
+.menu-fixed .navbar-nav > li > a {
+  margin-top: 13px;
+}
+.menu-fixed .navbar-brand {
+  display: block;
+  margin-top: 0;
+  opacity: 1;
+}
+
+/* =====================
+  Jumbotron Styles
+===================== */
+/* =========== Wallpaper ========== */
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.685), rgb(0, 0, 0)),
+    url(../img/Wallpapaper-Low-QA.jpg);
+  background-position: center center;
+  height: 100%;
+  margin: 0;
+  min-height: 510px;
+  position: relative;
+  width: 100%;
+}
+.jumbotron .container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.jumbotron .row {
+  padding-bottom: 45px;
+}
+.jumbotron .logo {
+  max-width: 150px;
+  width: 80%;
+}
+.jumbotron .title {
+  text-transform: uppercase;
+  color: #bd0d0d;
+}
+.jumbotron p {
+  margin: 0;
+}
+
+/* =====================
+  Containers
+===================== */
+section.row,
+footer.row {
+  padding: 30px 30px 60px;
+}
+/*** Modal ***/
+.modal-dialog.wide {
+  width: 90%;
+}
+.modal-dialog.wide .row {
+  margin: 0 0 30px;
+}
+.modal-dialog.wide .row .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.modal-header {
+  border: none;
+  padding: 30px 30px 0;
+}
+.modal-header .close {
+  font-size: 2rem;
+  color: rgba(255, 255, 255);
+}
+.modal-content {
+  background-color: #000000;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.158);
+}
+.modal-body {
+  padding: 30px;
+}
+.modal-body li {
+  margin-bottom: 9px;
+}
+.modal-footer {
+  padding: 30px 0 15px;
+}
+/* Fade Up Animation */
+.modal.fade .modal-dialog {
+  -webkit-transform: translate3d(0, 100, 0);
+  -ms-transform: translate3d(0, 100 0);
+  transform: translate3d(10, 0, 100);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/*Bakcground nav*/
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.979);
+  color: #000000;
+  z-index: 1025;
+}
+.modal-backdrop.in {
+  opacity: 0.9;
+}
+
+/* =====================
+  Buttons
+===================== */
+.td-btn {
+  padding: 12px 36px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+.td-btn + .td-btn {
+  margin-left: 6px;
+}
+.td-btn.small {
+  font-family: "Work Sans", helvetica, sans-serif;
+  font-size: 0.7rem;
+  padding: 9px 15px 8px;
+}
+.outline {
+  background-color: transparent;
+  border: 1px solid #a82626;
+  color: rgb(255, 255, 255);
+}
+.outline:focus,
+.outline:hover {
+  background-color: #2e2e2e3b;
+  color: #ffffff;
+}
+.outline.red {
+  border-color: #a82626;
+  color: #ffffff;
+}
+.outline.red:focus,
+.outline.red:hover {
+  background-color: #181818;
+  color: #fffefd;
+}
+.outline.white {
+  border-color: #fffefd;
+  color: #fffefd;
+}
+/* Navbar Contact Button */
+.outline.white:focus,
+.outline.white:hover {
+  background-color: #141414;
+  color: #ffffff;
+}
+.navbar-nav .outline.succses {
+  border-color: #a82626;
+  color: #888888;
+  margin: 20px 15px 0;
+  padding-top: 0;
+}
+.navbar-nav .outline.succses:focus,
+.navbar-nav .outline.succses:hover {
+  background-color: #a82626;
+  color: #f7f3f0;
+  text-decoration: none;
+}
+.menu-fixed .outline.succses {
+  margin-top: 11px;
+}
+/* SVG Buttons */
+.iconBtn > img {
+  margin-right: 6px;
+  margin-top: -3px;
+  width: 18px;
+}
+.iconBtn:focus > img,
+.iconBtn:hover > img {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+}
+
+/* Social Icons */
+.social {
+  display: inline-block;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  height: 36px;
+  margin-left: 3px;
+  width: 36px;
+}
+.social:focus,
+.social:hover {
+  background-color: transparent;
+}
+.social + .social {
+  margin-left: 10px;
+}
+.social img {
+  max-width: 80%;
+}
+
+/* =====================
+  Icons and Images
+===================== */
+.icon {
+  max-height: 90px;
+}
+.icon + p {
+  margin-top: 15px;
+}
+/* Profile Pic */
+.profile {
+  max-width: 180px;
+}
+/* Glyphicons */
+.glyphicon-heart {
+  color: #ffffff;
+}
+/*** Project Modals ***/
+/*** Flexbox Grid ***/
+.flex-container {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+.flex-item {
+  align-items: center;
+  display: flex;
+  height: 350px;
+  justify-content: center;
+  margin: 0 0 30px;
+  overflow: hidden;
+  width: 48.5%;
+}
+.flex-item > img {
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+.flex-item.full,
+.flex-item.full > img {
+  height: auto;
+  width: 100%;
+}
+.flex-item.full.crop {
+  height: 500px;
+}
+.flex-item.full > .text {
+  max-width: 720px;
+  padding: 20px 0 30px;
+}
+.flex-item.left {
+  justify-content: flex-start;
+}
+.flex-item.top {
+  align-items: flex-start;
+}
+.label.tag {
+  background-color: #a82626;
+  border-radius: 0;
+  font-weight: normal;
+}
+/* To override button alignment in modals */
+.center {
+  text-align: center;
+}
+
+/* =====================
+  Other Styles
+===================== */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-60 {
+  margin-top: 30px;
+}
+.bg-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.911);
+}
+.bg-white {
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+}
+.bg-black {
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+.bg-star-r {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.86),
+      rgba(0, 0, 0, 0.121),
+      rgb(0, 0, 0, 0.86)
+    ),
+    url(.../img/red-star.png);
+}
+.gray {
+  color: #000000;
+}
+.dashed {
+  border-top: 2px dashed #000000;
+}
+/*** Contact Form ***/
+.checkbox {
+  display: none;
+}
+/*=====================
+Scrolbar color
+===================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #a82626;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #000000;
+}
+::-webkit-resizer {
+  background-color: rgb(0, 0, 0);
+}
+/* =====================
+  Media Queries
+===================== */
+@media (max-width: 1199px) {
+  /* Center class for medium screens */
+  .md-center {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  /*** Resume ***/
+  .year {
+    text-align: left;
+  }
+  /*** Portfolio ***/
+  #projects .carousel-control {
+    margin-top: 300%;
+  }
+  #projects .carousel-inner img {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /*** Page Elements ***/
+  section .row [class^="col-sm-"] + [class^="col-sm-"],
+  section .row [class*=" col-sm-"] + [class*=" col-sm-"] {
+    margin-top: 30px;
+  }
+  /*** Jumbotron ***/
+  .jumbotron .logo {
+    max-width: 120px;
+  }
+  /*** Mobile Nav ***/
+  .navbar-toggle {
+    height: 36px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    color: #a82626 !important;
+    background-color: #a8262623 !important;
+  }
+  .navbar-toggle .glyphicon {
+    color: #a82626 !important;
+    background-color: #a826261e !important;
+    top: -2px;
+  }
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border-color: #bd1414 !important;
+  }
+  .navbar-default .navbar-toggle .active {
+    color: #bd1414 !important;
+  }
+  .navbar-collapse {
+    /*background-color: #000000;*/
+    background-color: rgba(0, 0, 0, 0.315);
+    border: none;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .navbar-collapse .outline.succses {
+    margin: 15px auto 30px;
+    max-width: 150px;
+  }
+  /*** Portfolio ***/
+  #projects .carousel-control {
+    margin-top: 300%;
+  }
+  #projects .card {
+    text-align: center;
+  }
+}

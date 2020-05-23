@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: eaprules.com
+Token: f75ff0cd6651347b226e3dd3a351d7f0556c0839c09d4c952cb8fcee50476f8b

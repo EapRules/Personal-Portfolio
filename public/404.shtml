@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EapRules | Software Developer</title>
+  <!--Css-->
+ <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/normalize.min.css">
+ <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+ <link rel="stylesheet" href="assets/css/style.css">
+ <!--Icons-->
+ <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+ <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#000000">
+ <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+ <meta name="apple-mobile-web-app-title" content="EapRules">
+ <meta name="application-name" content="EapRules">
+ <meta name="msapplication-TileColor" content="#000000">
+ <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
+</head>
+<body>
+  <header id="top" class="jumbotron bg-star-r">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-12"></div>
+          <span style="color: #777;">
+            ERROR <!--#echo var="REDIRECT_STATUS" --> PAGE NOT FOUND. </br>
+            Your IP is: <!--#echo var="REMOTE_ADDR" --> </br>     
+          </span>
+        <span style="color: #777;font-style:italic;">
+          <a href="/">Go home!</a>
+        </span>
+      </div>
+      
+    </div>
+    
+  </header>
+</body>
+
+</html>
