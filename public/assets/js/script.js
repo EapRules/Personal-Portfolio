@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
 	// Collapse menu on resize
-	$(window).resize(closeMenu());
+
 
 	// -------------------------
   // Smooth Scroll to Content

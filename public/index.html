@@ -4,10 +4,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>EapRules | Software Developer</title>
+  <title>EapRules | Front-end Developer </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio website, Enzo Politi, a software developer based in Tucuman, Argentina.">
+  <meta name="description" content="Portfolio website, Enzo Politi, a frontend developer based in Tucuman, Argentina.">
   <meta name="author" content="EapRules">
   <meta name="keywords"
     content="EapRules, Enzo, Politi, portfolio, web, responsive, development, developer, front end, front-end, html, css, javascript, php">
@@ -43,7 +43,16 @@
   </nav>
   <div id="top" class="jumbotron jumbotron-fluid">
     <div class="container text-center">
-      <h1 class="display-4 title">Enzo Politi</h1>
+        <h1 id="word" class="display-6 title">
+          <span class="letter">E</span>
+          <span class="letter">A</span>
+          <span class="letter">P</span>
+          <span class="letter">R</span>
+          <span class="letter">U</span>
+          <span class="letter">L</span>
+          <span class="letter">E</span>
+          <span class="letter">S</span>
+        </h1>
       <p>FRONT-END DEVELOPER</p>
     </div>
   </div>
@@ -51,11 +60,11 @@
     <section id="about" class="row justify-content-center bg-black bg-shadow">
       <div class="row ">
         <div class="col-xs-12">
-          <h2 class="mb-30">ABOUT</h2>
+          <h2 class="mb-10">ABOUT</h2>
         </div>
       </div>
-      <div class="row mb-30 justify-content-center">
-        <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
+      <div class="row mb-30 justify-content-center my-5">
+        <div class="col-xs-12 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2 bg-star-r ">
           <img class="img-fluid center-block profile mb-30" src="assets/img/EapRules-face-low.png"
             alt="EapRules Profile photo">
         </div>
@@ -74,27 +83,38 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <a class="btn td-btn outline red mb-30 " href="Enzo_Politi_CV.pdf" target="pdf-frame"
+          <a class="btn td-btn outline red mb-30 " href="/Enzo_Politi_CV.pdf" target="pdf-frame"
             rel="noopener noreferrer" download>Download my resume</a>
         </div>
       </div>
     </section>
-    <section class="row justify-content-center bg-star-r">
-      <div class="text-center">
-        <h3 class="mb-10">LIKE WHAT YOU SEE?</h3>
-        <h4 class="mb-4">Let's talk, tell me what you need.</h4>
-        <div class="col-xs-12">
-          <a class="btn td-btn outline red mb-2" data-toggle="modal" data-target="#contactModal">Email Me</a>
-          <a class="btn td-btn outline red mb-2" href="tel:+543816758172">Call Me</a>
-          <a class="btn td-btn outline red mb-2"
-            href="https://wa.me/543816758172?text=Hello%20*Enzo*%20...">Whatsapp</a>
+
+    
+    <section class="row  justify-content-center bg-black bg-shadow">
+      <div class="text-center ">
+        <h3 class="mt-5">LIKE WHAT YOU SEE?</h3>
+        <h4 class="my-5">Let's talk, tell me what you need.</h4>
+        <div class="col-xs-12 bg-star-r">
+          <div class="row justify-content-center ">
+            <a class="btn td-btn newbtn outline red mb-2 bg-black bg-shadow " data-toggle="modal" data-target="#contactModal">Email Me</a>
+          </div>
+          <div class="row justify-content-center">
+            <a class="btn td-btn newbtn outline red mb-2 bg-black bg-shadow " href="tel:+543816758172">Call Me</a>
+          </div>
+          <div class="row justify-content-center">
+            <a class="btn td-btn newbtn outline red mb-2 bg-black bg-shadow "
+              href="https://wa.me/543816758172?text=Hello%20*Enzo*%20...">Whatsapp</a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="row justify-content-center bg-black bg-shadow mb-0">
-      <footer class=" text-center mb-0">
-        <h3>FOLLOW ME!</h3>
-        <div id="follow-me" class="col-xs-12 mb-30 mt-30">
+
+
+
+    <footer class="row justify-content-center bg-black bg-shadow ">
+      <div class="col-6 text-center">
+        <h3 >FOLLOW ME!</h3>
+        <div id="follow-me" class="d-flex justify-content-around my-5 ">
           <a class="social" href="https://www.linkedin.com/in/EapRules/" target="_blank" title="LinkedIn"
             rel="noopener noreferrer">
             <i class="fab fa-linkedin" style="font-size: 40px;"></i>
@@ -112,17 +132,18 @@
             <i class="fab fa-github-square" style="font-size: 40px;"></i>
           </a>
         </div>
-        <div class=" copyright bg-black bg-shadow text-center" style="height: 0;min-height: 0;">
-          <small style="font-size: 18px;" class="text-muted">
-            <a class="scroll" href="#top">EapRules</a>&copy;
-            <script type="text/javascript">
-              var year = new Date();
-              document.write(year.getFullYear());
-            </script>
-            All rights reserved!</small>
-        </div>
-      </footer>
-    </section>
+      
+      </div>
+      <div class="col-12 copyright bg-black bg-shadow text-center mt-4" style="height: 0;min-height: 0;">
+        <small style="font-size: 18px;" class="text-muted">
+          <a class="scroll" href="#top">EapRules</a>&copy;
+          <script type="text/javascript">
+            var year = new Date();
+            document.write(year.getFullYear());
+          </script>
+          All rights reserved!</small>
+      </div>
+    </footer>
   </div>
   <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactTitle">
     <div class="modal-dialog" role="document">
@@ -163,6 +184,7 @@
     console.log("%cHello👋!%cI hope you like my website. Regards, EapRules 👨‍💻",
       "color: white; background: grey; font-size:30px;", "color: white; background: grey; font-size:16px;");
   </script>
+   <script src="assets/js/letter.js"></script>
   <script src="assets/js/smart-forms.min.js"></script>
   <script src="https://kit.fontawesome.com/762a8728ec.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -171,7 +171,6 @@ hr {
   width: 80%;
 }
 .jumbotron .title {
-  text-transform: uppercase;
   color: #bd0d0d;
 }
 .jumbotron p {
@@ -310,6 +309,10 @@ footer.row {
   -webkit-filter: brightness(10);
   filter: brightness(10);
 }
+a.newbtn.btn.td-btn.outline.red.mb-2 {
+  width: 174px;
+  margin: 10px 0;
+}
 
 /* Social Icons */
 .social {
@@ -438,7 +441,7 @@ footer.row {
       rgba(0, 0, 0, 0.121),
       rgb(0, 0, 0, 0.86)
     ),
-    url(.../img/red-star.png);
+    url(../img/red-star.png);
 }
 .gray {
   color: #000000;
@@ -551,4 +554,10 @@ Scrolbar color
   #projects .card {
     text-align: center;
   }
+}
+.letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
 }
